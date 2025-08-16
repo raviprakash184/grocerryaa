@@ -3,6 +3,11 @@ import Sidebar from './components/Sidebar';
 import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import BusinessGroup from './components/BusinessGroup';
+import BusinessList from './components/BusinessList';
+import StoreList from './components/StoreList';
+import NewOrder from './components/NewOrder';
+import ProcessingOrders from './components/ProcessingOrders';
+import OrderDashboard from './components/OrderDashboard';
 import Login from './components/Login';
 
 function App() {
@@ -24,6 +29,16 @@ function App() {
         return <Dashboard />;
       case 'business-group':
         return <BusinessGroup />;
+      case 'business-list':
+        return <BusinessList />;
+      case 'stores-list':
+        return <StoreList />;
+      case 'new-order':
+        return <NewOrder />;
+      case 'processing-orders':
+        return <ProcessingOrders />;
+      case 'order-dashboard':
+        return <OrderDashboard />;
       case 'business-group-sort':
         return (
           <div className="p-6 bg-gray-50 min-h-screen">
